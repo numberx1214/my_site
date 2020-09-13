@@ -1,0 +1,20 @@
+{% extends 'shared/_MainLayout.html'  %}
+
+{% block content %}
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <img src="{{ post.image.url }}" alt="{{ post.title }}" class="img-fluid">
+            <div style="text-align: center;"><h1>{{ post.title }}</h1></div>
+            {{ post.content }}
+
+            <i>created by:  {{ post.author }}</i>
+            <i>created on:  {{ post.updated_on }}</i>
+
+        </div>
+      </div>
+    </div>
+  </article>
+{% endblock %}

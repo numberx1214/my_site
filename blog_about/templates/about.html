@@ -1,0 +1,24 @@
+{% extends 'shared/_MainLayout.html' %}
+{% load static %}
+{% block content %}
+  <!-- Page Header -->
+      <div class="text-center">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>About Me</h1>
+            <span class="subheading">This is what I do.</span>
+          </div>
+        </div>
+      </div>
+
+  <!-- Main Content -->
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto ">
+            <p class="text-center">
+                {{ about.about_text }}
+            </p>
+        </div>
+    </div>
+{% endblock %}
+</div>
